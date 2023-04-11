@@ -1,0 +1,1508 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+@media only screen and (max-width : 1680px)
+	html
+		&.theme-dark 
+			.header--wrapper__bottom
+				.dark
+					.right--main
+						left: 13%
+	.header
+		&--wrapper
+			&__bottom
+				.right
+					width: 700px
+					height: 700px
+					&--main
+						max-width: 100%
+						left: 4%
+					&--background
+						.circle
+							&-1
+								width: 700px
+								height: 700px
+							&-2
+								width: 500px
+								height: 500px
+
+@media only screen and (max-width : 1440px)
+	.h1, .h2
+		font-size: 56px
+		line-height: 64px
+	.h3
+		font-size: 40px
+		line-height: 48px
+	.container
+		max-width: 1120px
+	.header
+		margin-bottom: 30px
+		height: fit-content
+		.container
+			&::before, &::after
+				filter: blur(70px)
+		&--wrapper
+			&__top
+				.wrapper
+					max-width: 1120px
+			&__bottom
+				gap: 5%
+				height: fit-content
+				.left
+					max-width: 448px
+					align-self: flex-start
+					margin-top: 100px
+					.h1
+						max-width: 448px
+					p
+						max-width: 420px
+					.copy
+						.title
+							font-size: 16px
+						&--wrapper
+							max-width: 412px
+							#myBlock
+								font-size: 16px
+					.links
+						a
+							font-size: 16px
+							.icon
+								svg
+									height: 10px
+				.right
+					width: 624px
+					height: 624px
+					&::before
+						left: 0
+						filter: blur(100px)
+						width: 1390px
+						height: 1400px
+						top: -50%
+					&--background
+						.circle
+							&-1
+								width: 624px
+								height: 624px
+							&-2
+								width: 438px
+								height: 438px
+						.icons
+							&--item
+								max-width: 135px
+								max-height: 40px
+							&-1, &-2, &-4
+								width: 24px
+								height: 24px
+							&-1
+								left: 4%
+								top: 25%
+							&-3
+								right: 21%
+								top: 5.7%
+							&-4
+								bottom: 3.5%
+								left: 25%
+							&-5
+								left: 9%
+								top: 6%
+							&-7
+								left: -5%
+								top: 60%
+							&-9
+								left: 12%
+								top: 91%
+							&-10
+								right: 1%
+								top: 21%
+	.main
+		&--partners
+			&__wrapper
+				.light, .dark
+					padding: 32px 14px
+					img
+						max-width: fit-content
+		&--advantages
+			&::before
+				top: 170%
+				min-height: 1263px
+				height: 100%
+				width: 130%
+				left: -2%
+				filter: blur(50px)
+			&::after
+				top: 270%
+			&__wrapper
+				.item
+					.text
+						overflow: hidden
+						text-overflow: ellipsis
+						display: -webkit-box
+						-webkit-box-orient: vertical
+						-webkit-line-clamp: 2
+		&--striving
+			&__title
+				span
+					font-size: 14px
+				p
+					max-width: 691px
+					font-size: 18px
+					text-align: center
+			&__wrapper
+				gap: 32px
+				.item
+					padding: 32px
+					min-height: 352px
+		&--dive
+			&::after
+				min-height: 810px
+				bottom: -65px
+			&__info
+				.h3
+					max-width: 544px
+				.text
+					p
+						font-size: 16px
+						min-height: 155px
+		&--game
+			.subtitle
+				font-size: 18px
+				line-height: 26px
+				max-width: 815px
+			&__wrapper
+				.left
+					&--item
+						max-width: 510px
+						.title
+							&--info
+								font-size: 24px
+						&__text
+							font-size: 18px
+							max-width: 402px
+							br
+								display: none
+				.right
+					max-width: 386px
+					&:before, &::after
+						width: 230px
+						height: 350px
+					&--text
+						.icon
+							img
+								max-width: 97px
+						.title
+							span
+								font-size: 16px
+								&.bnb
+									padding: 8px
+						.volume
+							margin-bottom: 12px
+							padding-bottom: 12px
+							span
+								font-size: 12px
+						.space
+							font-size: 12px
+							.image
+								img
+									width: 26px
+									height: 26px
+					&--wrapper
+						max-width: 256px
+		&--investors
+			&::before
+				left: -2%
+				top: -15%
+			&__wrapper
+				.item
+					.h3
+						max-width: 968px
+					&--block
+						max-width: 929px
+						&__text
+							font-size: 18px
+							max-width: 513px
+							padding-left: 24px
+							br
+								display: none
+					&:nth-child(2)
+						.h3
+							margin-right: 160px
+						.item--block
+							max-width: 928px
+							&__text
+								max-width: 495px
+								padding-right: 24px
+					&:last-child
+						.item--block
+							&__text
+								max-width: 502px
+		&--social
+			&::after
+				bottom: -55%
+			&__wrapper
+				.left
+					.subtitle
+						font-size: 18px
+					.link
+						font-size: 24px
+						gap: 10px
+						.icon
+							svg
+								width: 12px
+								height: 12px
+				.right
+					&--item
+						&__text
+							.title
+								font-size: 24px
+		&--roadmap 
+			&::after
+				top: -80%
+			&::before
+				opacity: 0.6
+				filter: blur(70px)
+				bottom: -110%
+				min-height: 1420px
+	.footer
+		&--wrapper
+			&__logo
+				padding-right: 39px
+				max-width: 223px
+				.social
+					max-width: 184px
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1160px)
+	body
+		background-position: top center
+		background-size: 100% 100%
+	.h1, .h2
+		font-size: 40px
+		line-height: 48px
+	.h3
+		font-size: 32px
+		line-height: 40px
+	.container
+		max-width: 992px
+	.header
+		height: fit-content
+		&--wrapper
+			&__top
+				.wrapper
+					max-width: 992px
+			&__bottom
+				gap: 1%
+				align-items: flex-start
+				height: fit-content
+				margin-top: 15vh
+				.left
+					margin-top: 50px
+				.right
+					&::before
+						top: -105%
+					width: 500px
+					height: 500px
+					&--background
+						.icons
+							&--item
+								max-width: 95px
+								max-height: 30px
+						.circle
+							&-1
+								width: 500px
+								height: 500px
+							&-2
+								width: 350px
+								height: 350px
+	.main
+		&--partners
+			&__wrapper
+				.light, .dark
+					gap: 24px
+					flex-wrap: no-wrap
+					justify-content: flex-start
+					img
+						max-width: 150px
+						width: 100%
+		&--striving
+			&__wrapper
+				.item
+					padding: 24px
+		&--dive
+			padding-bottom: 150px
+			&::after
+				bottom: -100px
+				min-height: 700px
+			&__wrapper
+				&::after
+					background: linear-gradient(0deg,rgba(30,30,30,0) 0,$black 50%,rgba(30,30,30,0))
+					height: 60px
+					bottom: -30px
+			&__info
+				.h3
+					max-width: 420px
+		&--investors
+			&__wrapper
+				.item
+					&--number
+						max-width: 50px
+					.h3
+						max-width: 850px
+						z-index: 1
+						position: relative
+					&--block
+						max-width: 790px
+						&__text
+							font-size: 16px
+						&__images
+							img
+								&:first-child
+									width: 180px
+									top: -25%
+								&:last-child
+									max-width: 150px
+									top: 25%
+					&:nth-child(2)
+						.h3
+							margin-right: 135px
+						.item--block
+							max-width: 790px
+							&__images
+								img
+									&:first-child
+										max-width: 100px
+										right: 5%
+									&:nth-child(2)
+										max-width: 180px
+										min-width: auto
+									&:last-child
+										right: 30%
+										top: -40%
+					&:last-child
+						.item--block
+							&__images
+								img
+									&:first-child
+										top: -30%
+										left: 0
+									&:last-child
+										top: 15%
+		&--roadmap
+			&::after
+				width: 1000px
+				height: 1000px
+				top: -65%
+			&__wrapper
+				padding: 24px
+				min-height: 490px
+		&--qrcode
+			&__wrapper
+				.right
+					max-width: 40%
+					margin: 0 auto
+					&--block
+						&__last
+							.item
+								.h2
+									.icon
+										max-width: 60px
+										right: 45px
+		&--social
+			&::after
+				min-height: 1000px
+			&__wrapper
+				.left
+					max-width: 280px
+				.right
+					max-width: 450px
+					gap: 10px
+					display: flex
+					flex-direction: column
+					&--item
+						padding: 12px
+						&__text
+							.text
+								font-size: 14px
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	html
+		overflow-x: hidden
+		&.theme-dark 
+			.header--wrapper__bottom
+				.dark
+					.right--main
+						left: 16%
+	section
+		margin-bottom: 100px
+	.container
+		max-width: 900px
+		.row
+			padding-left: 24px
+			padding-right: 24px
+	.header
+		&--wrapper
+			&__top
+				.wrapper
+					max-width: 900px
+			&__bottom
+				.left
+					max-width: 390px
+				.right
+					width: 400px
+					height: 400px
+					&--main
+						left: 7%
+					&--background
+						.icons
+							&-1, &-4, &-2, &-3
+								width: 16px
+								height: 16px
+						.circle
+							&-1
+								width: 400px
+								height: 400px
+							&-2
+								width: 280px
+								height: 280px
+	.main
+		&--investors
+			&__wrapper
+				.item
+					.h3
+						max-width: 735px
+						font-size: 40px
+						line-height: 48px
+					&--block
+						max-width: 710px
+					&:nth-child(2)
+						.item--block
+							max-width: 710px
+		&--game
+			&__wrapper
+				.left
+					&--item
+						.title
+							&--info
+								font-size: 20px
+								line-height: 24px
+		&--dive
+			&::after
+				min-height: 700px
+	.footer
+		&--wrapper
+			gap: 32px
+			&__logo
+				padding-right: 32px
+				max-width: 210px
+
+@media only screen and (max-width : 900px)
+	.h3
+		font-size: 24px
+		line-height: 32px
+	.logo
+		img
+			height: 27px
+	.container
+		max-width: 100%
+	.header
+		&--wrapper
+			&__bottom
+				.left
+					max-width: 327px
+					.copy
+						&--wrapper
+							max-width: fit-content
+							width: 100%
+							#myBlock
+								padding: 16px
+								padding-right: 52px
+							#copyButton
+								right: 16px
+								top: 17px
+	.main
+		&--partners 
+			&__wrapper 
+				.light, .dark
+					display: grid
+					grid-template-columns: 1fr 1fr 1fr
+					grid-template-rows: 1fr 1fr
+					padding: 16px 28px
+					gap: 24px 56px
+		&--roadmap
+			&__wrapper
+				padding: 12px
+				.stages
+					gap: 0
+					.stage
+						&--title
+							font-size: 24px
+		&--striving
+			&__wrapper
+				.item
+					padding: 24px 16px
+	.footer
+		&--wrapper
+			flex-wrap: wrap
+			&__logo
+				padding-right: 0
+				display: flex
+				max-width: 100%
+				border-right: none
+				justify-content: space-between
+				.text
+					margin-bottom: 0
+				.social
+					transform: translateY(-8px)
+		&--bottom
+			flex-wrap: wrap
+			gap: 24px
+			&__left
+				width: 100%
+				.link
+					&:nth-child(2)
+						margin-left: auto
+			&__right
+				width: 100%
+				justify-content: space-between
+
+@media only screen and (max-width : 820px)
+	.main
+		&--investors
+			&__wrapper
+				.item
+					.h3
+						max-width: 670px
+					&--block
+						max-width: 650px
+						&__images
+							img
+								&:last-child
+									right: -20%
+					&:nth-child(2)
+						.item--block
+							max-width: 640px
+					&:last-child
+						.item
+							&--block
+								&__images
+									img
+										&:first-child
+											left: -20%
+										&:last-child
+											right: -15%
+											top: 0
+
+@media only screen and (max-width : 800px)
+	html
+		&.theme-light
+			.header
+				&--wrapper
+					&__top
+						.menu
+							background: $white
+							border: 1px solid #F4F5F6
+							box-shadow: 0px 12px 24px rgba(31, 47, 70, 0.1)
+	.search, .burger
+		display: block
+	.header
+		&--wrapper
+			&__top
+				.wrapper
+					.search
+						margin-left: auto
+				.menu
+					position: fixed
+					right: -100%
+					top: 87px
+					transition: right .5s ease
+					padding: 24px
+					border-bottom-left-radius: 16px
+					display: flex
+					flex-direction: column
+					width: 30%
+					background: rgba(20,20,22,.7)
+					backdrop-filter: blur(7px)
+					.list
+						flex-direction: column
+					&.active
+						right: 0
+	.main
+		&--dive
+			&::after
+				min-height: 600px
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	html
+		&.theme-dark 
+			.header--wrapper__bottom
+				.dark
+					.right--main
+						left: 19%
+		&.theme-light
+			.main
+				&--partners
+					&__wrapper
+						img
+							&:last-child
+								order: 1
+								max-width: 155px
+							&:nth-child(3)
+								order: 2
+								max-width: 98px
+							&:nth-child(5)
+								order: 3
+								max-width: 82px
+							&:nth-child(4)
+								order: 4
+								max-width: 92px
+							&:nth-child(2)
+								order: 5
+								max-width: 141px
+							&:first-child
+								order: 6
+								max-width: 91px
+				&--investors
+					&__wrapper
+						.item
+							background: linear-gradient(186.53deg, rgba(164, 200, 255, 0.04) 29.16%, rgba(164, 200, 255, 0) 155.19%)
+							border: 1px solid rgba(35, 38, 47, 0.1)
+							backdrop-filter: blur(25px)
+							&--block 
+								background: none
+								border: none
+								margin: 0
+							&::before
+								display: none
+				&--roadmap
+					&__wrapper
+						.stages
+							.stage
+								filter: none
+								&--number
+									span
+										opacity: 1
+								&--list
+									li
+										color: $colorText
+	body
+		&::after
+			background-position: center center
+			background-size: 100% 100%
+	.header
+		.container
+			&::before
+				left: -35%
+			&::after
+				height: 600px
+				width: 300px
+				left: -30%
+				top: 85%
+		&--wrapper
+			&__bottom
+				align-items: center
+				.left
+					max-width: 300px
+				.right
+					width: 350px
+					height: 350px
+					&--main
+						left: 10%
+					&--background
+						.circle
+							&-1
+								width: 350px
+								height: 350px
+							&-2
+								width: 250px
+								height: 250px
+	.main
+		&--partners
+			&__wrapper
+				.light, .dark
+					flex-wrap: wrap
+					gap: 24px
+					img
+						max-width: 219px
+						flex: 1 1 calc(33.3% - 24px)
+						max-width: 100%
+						&:first-child
+							max-width: 129px
+						&:nth-child(2)
+							max-width: 200px
+						&:nth-child(4), &:nth-child(5)
+							max-width: 139px
+						&:last-child
+							max-width: 116px
+		&--advantages
+			margin-bottom: 70px
+			&::before
+				background-size: contain
+				min-height: 600px
+			.container
+				.row
+					padding-right: 0
+					padding-left: 0
+			&__wrapper
+				overflow-y: auto
+				padding-left: 24px
+				padding-right: 24px
+				padding-top: 8px
+				padding-bottom: 30px
+				overflow: -moz-scrollbars-none
+				-ms-overflow-style: none
+				scrollbar-width: none
+				&::-webkit-scrollbar
+					display: none
+					width: 0
+					height: 0
+				.item
+					min-width: 226px
+		&--striving
+			&__wrapper
+				flex-wrap: wrap
+				.item
+					min-width: 327px
+		&--dive
+			.container
+				.row
+					padding-right: 0
+					padding-left: 0
+			.h2
+				padding-right: 24px
+				padding-left: 24px
+			&::after
+				min-height: 500px
+				bottom: 7%
+			&__info
+				padding-right: 24px
+				padding-left: 24px
+				.h3
+					max-width: 300px
+				.text
+					width: 100%
+					p
+						min-height: 180px
+			&__wrapper
+				overflow-y: auto
+				overflow-y: hidden
+				padding-bottom: 30px
+				padding-right: 24px
+				padding-left: 24px
+				overflow: -moz-scrollbars-none
+				-ms-overflow-style: none
+				scrollbar-width: none
+				&::-webkit-scrollbar
+					display: none
+					width: 0
+					height: 0
+				&::after
+					bottom: 0
+					left: 0
+					right: 0
+					min-width: 1155px
+				.image
+					min-width: 75px
+		&--investors
+			&::after
+				display: none
+			&__wrapper
+				background-image: none
+				gap: 88px
+				display: flex
+				flex-direction: column
+				position: relative
+				z-index: 3
+				&::before
+					content: ''
+					display: block
+					position: absolute
+					background-image: url(../img/investors/cr2blue_3.png)
+					background-repeat: no-repeat
+					top: 30%
+					left: 20%
+					z-index: -1
+					width: 92px
+					height: 97px
+					opacity: 0.35
+				&::after
+					content: ''
+					display: block
+					opacity: 0.35
+					position: absolute
+					background-image: url(../img/investors/cr2blue_1.png)
+					background-repeat: no-repeat
+					top: 40%
+					left: -10%
+					z-index: -1
+					width: 181px
+					height: 191px
+				.item
+					backdrop-filter: blur(25px)
+					background: linear-gradient(85.17deg, rgba(20, 20, 22, 0.8) 7.79%, rgba(20, 20, 22, 0.8) 92.21%)
+					border-radius: 32px
+					display: flex
+					justify-content: space-between
+					margin-left: auto
+					max-width: 1213px
+					min-height: 186px
+					position: relative
+					width: 100%
+					flex-direction: column
+					padding: 16px
+					position: relative
+					&::before
+						content: ''
+						border-radius: 32px
+						position: absolute
+						top: 0
+						left: 0
+						right: 0
+						bottom: 0
+						border: 1px solid transparent
+						background: radial-gradient(69.43% 69.43% at 50% 50%, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%)
+						-webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0)
+						-webkit-mask-composite: destination-out
+						mask-composite: exclude
+					&--number
+						max-width: fit-content
+						margin: 0
+						margin-bottom: 60px
+					.h3
+						margin: 0
+						margin-bottom: 8px
+						font-size: 24px
+						line-height: 32px
+					&--block
+						min-height: fit-content
+						background: none
+						backdrop-filter: initial
+						position: initial
+						filter: initial
+						margin-left: 0
+						&__images
+							position: absolute
+							right: 0
+							min-height: 255px
+							top: 0%
+							img
+								&:first-child
+									left: 5%
+								&:last-child
+									top: 0
+									right: -5%
+						&__text
+							padding: 0
+						&::before
+							display: none
+					&:nth-child(2)
+						margin-bottom: 0
+						.h3
+							margin: 0
+							max-width: fit-content
+							margin-bottom: 8px
+						.item
+							&--block
+								max-width: fit-content
+								&__images
+									left: 0
+									right: auto
+									img
+										&:first-child
+											display: none
+										&:nth-child(2)
+											top: -25%
+											left: -5%
+										&:last-child
+											display: none
+							&--number
+								margin: 0
+								margin-left: auto
+								margin-bottom: 80px
+					&:last-child
+						.item
+							&--number
+								margin-bottom: 60px
+								transform: translateY(0)
+							&--block
+								&__images
+									img
+										&:first-child
+											left: 12%
+										&:last-child
+											right: -5%
+											top: 0%
+											transform: rotate(10deg)
+		&--roadmap
+			margin-bottom: 100px
+			&::after
+				display: none
+			.container
+				.row
+					padding-right: 0
+					padding-left: 0
+			.h2
+				padding-right: 24px
+				padding-left: 24px
+				margin-bottom: 32px
+			&__wrapper
+				min-height: fit-content
+				padding: 0
+				&::before
+					display: none
+				.stages
+					overflow-y: auto
+					padding-left: 24px
+					padding-right: 24px
+					gap: 24px
+					padding-bottom: 5px
+					overflow: -moz-scrollbars-none
+					-ms-overflow-style: none
+					scrollbar-width: none
+					&::-webkit-scrollbar
+						display: none
+						width: 0
+						height: 0
+					.stage
+						border: 1px solid #23262F1A
+						padding: 24px
+						min-width: 253px
+						flex: 100%
+						background: linear-gradient(186.53deg, rgba(164, 200, 255, 0.04) 29.16%, rgba(164, 200, 255, 0) 155.19%)
+						filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25))
+						backdrop-filter: blur(25px)
+						border-radius: 24px
+						&::before
+							z-index: -1
+							content: ''
+							position: absolute
+							top: 0
+							left: 0
+							right: 0
+							bottom: 0
+							border-radius: 24px
+							border: 1px solid transparent
+							background: radial-gradient(69.43% 69.43% at 50% 50%, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%)
+							-webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0)
+							-webkit-mask-composite: destination-out
+							mask-composite: exclude
+						&--number
+							margin-bottom: 16px
+							span
+								background: $white
+								color: $black
+							&::after
+								display: none
+								background: linear-gradient(186.53deg, rgba(164, 200, 255, 0.04) 29.16%, rgba(164, 200, 255, 0) 155.19%)
+						&--title
+							font-size: 24px
+							line-height: 32px
+						&--list
+							li
+								color: $white
+		&--qrcode
+			&__wrapper
+				flex-wrap: wrap
+				.left
+					max-width: 40%
+		&--social
+			&__wrapper
+				.right
+					max-width: 350px
+	.footer
+		&--wrapper
+			&__menu
+				gap: 5%
+				flex-wrap: wrap
+
+@media only screen and (max-width : 700px)
+	html.theme-dark .header--wrapper__bottom .dark .right--main
+		display: none
+	body
+		&::after
+			background-size: cover
+	.mobile
+		display: flex !important
+	.h3
+		font-size: 24px
+		line-height: 32px
+	.header
+		margin-bottom: 56px
+		.container
+			.row
+				padding-right: 0
+				padding-left: 0
+		&--wrapper
+			&__top
+				height: 88px
+				.menu
+					top: 88px
+			&__bottom
+				margin-top: 112px
+				.left
+					max-width: 100%
+					margin-top: 0
+					p
+						font-size: 16px
+					&--icons
+						.dark, .light
+							display: flex
+							overflow-y: auto
+							margin-bottom: 40px
+							gap: 8px
+							padding-right: 24px
+							padding-left: 24px
+							overflow: -moz-scrollbars-none
+							-ms-overflow-style: none
+							scrollbar-width: none
+							img
+								height: 31px
+								display: flex
+							&::-webkit-scrollbar
+								display: none
+								width: 0
+								height: 0
+					.h1, p, .copy, .links
+						margin-right: 24px
+						padding-left: 24px
+						max-width: 366px
+					p
+						margin-bottom: 32px
+				.right
+					position: absolute
+					right: 0
+					width: fit-content
+					&::before
+						left: -300px
+						top: -40%
+						opacity: .7
+						filter: blur(60px)
+						height: 1200px
+						background-size: contain
+					&--main, &--background
+						display: none
+	.main
+		&--partners 
+			margin-bottom: 56px
+			&__wrapper
+				.light, .dark
+					display: grid
+					grid-template-columns: 1fr 1fr
+					grid-template-rows: auto
+					padding: 16px 28px
+					gap: 24px 40px
+					img
+						max-width: fit-content
+						&:first-child, &:nth-child(4), &:nth-child(5)
+							max-width: 98px
+						&:first-child
+							order: 2
+						&:nth-child(2)
+							order: 1
+						&:nth-child(3)
+							order: 3
+						&:nth-child(4)
+							order: 4
+						&:nth-child(5)
+							order: 6
+						&:last-child
+							order: 5
+							max-width: 81px
+		&--dive
+			&__info
+				gap: 5%
+				flex-wrap: wrap
+				.h3
+					max-width: 366px
+					margin-bottom: 24px
+		&--qrcode, &--social
+			&__wrapper
+				flex-direction: column
+				gap: 24px
+				.left
+					max-width: fit-content
+					position: initial
+				.right
+					max-width: 100%
+		&--game
+			&__wrapper
+				.left
+					max-width: 100%
+					&--item
+						max-width: 100%
+						backdrop-filter: blur(25px)
+						background: linear-gradient(85.17deg, rgba(20, 20, 22, 0.8) 7.79%, rgba(20, 20, 22, 0.8) 92.21%)
+						border-radius: 32px
+						&.active
+							background: linear-gradient(85.17deg,rgba(20,20,22,.8) 7.79%,rgba(20,20,22,.8) 92.21%)
+						&::before
+							content: ''
+							position: absolute
+							top: 0
+							left: 0
+							right: 0
+							bottom: 0
+							border-radius: 32px
+							border: 1px solid transparent
+							background: radial-gradient(69.43% 69.43% at 50% 50%, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%)
+							-webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0)
+							-webkit-mask-composite: destination-out
+							mask-composite: exclude
+							z-index: -1
+						&__text
+							max-width: 100%
+							.right
+								&--wrapper
+									margin: 24px auto 0
+				.right
+					display: none
+		&--investors
+			.h2
+				margin-bottom: 120px
+				br
+					&:first-child
+						display: block
+					&:last-child
+						display: none
+		&--qrcode
+			&__wrapper
+				.left
+					&--block
+						display: none
+		&--roadmap
+			&::after
+				display: none
+		&--striving
+			&__title
+				.h2
+					text-align: center
+	.footer
+		&--bottom
+			&__left
+				flex-wrap: wrap
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	.h2
+		font-size: 32px
+		line-height: 40px
+	html
+		&.theme-dark
+			body
+				&::after
+					background-image: url(../img/background-mobile.png)
+		&.theme-light
+			body
+				&::after
+					background-image: url(../img/background-white-mobile.png)
+			.main
+				&--qrcode
+					&__wrapper
+						.right
+							&--block
+								border-bottom: 1px solid $color_F4F5F6
+			.footer
+				&--wrapper
+					border-bottom: 1px solid $color_F4F5F6
+					&__logo
+						border-right: none
+						border-bottom: 1px solid $color_F4F5F6
+					&__block
+						border-bottom: 1px solid $color_F4F5F6
+						&:last-child
+							border-bottom: none
+	.background
+		svg
+			width: 32px
+			height: 32px
+			top: -4px
+			left: -5px
+	.search
+		display: flex
+		align-items: center
+		justify-content: center
+		&::before
+			width: 16px
+			height: 16px
+			margin: auto
+	.header
+		.container
+			&::before
+				left: -72%
+				top: 5%
+			&::after
+				left: -50%
+				top: 100%
+		&--wrapper
+			&__top
+				.menu
+					width: 50%
+					background: rgba(20,20,22,.9)
+			&__bottom 
+				.left
+					&--icons
+						img
+							max-height: 32px
+					.copy--wrapper
+						#successMessage
+							right: 0
+	.main
+		&--advantages
+			&::before
+				background-image: url(../img/bg/advantages-mobile-1.png)
+				top: 1100px
+				z-index: 1
+			&:after
+				top: 900px
+				background-image: url(../img/bg/advantages-mobile.png)
+				height: 100%
+				min-height: 1341px
+				width: 100%
+				opacity: 1
+				filter: blur(50px)
+		&--striving
+			&__title
+				align-items: flex-start
+				justify-content: flex-start
+				margin-bottom: 32px
+				.h2
+					text-align: left
+					br
+						display: block
+				p
+					text-align: left
+			&__wrapper
+				gap: 24px
+				.item
+					padding: 32px
+					p
+						font-size: 16px
+		&--dive
+			padding-bottom: 88px
+			&::after
+				background-position: bottom left
+				bottom: 14%
+			.h2
+				margin-bottom: 32px
+			&__info
+				.text
+					p
+						min-height: 170px
+			&__wrapper
+				&:after
+					left: 24px
+		&--game
+			&__wrapper
+				.left--item
+					padding: 22px 16px
+					border-radius: 16px
+					min-height: 72px
+					&::before
+						border-radius: 16px
+						opacity: 0
+						transition: opacity .3s ease
+					&.active
+						&::before
+							opacity: 1
+					.title
+						.icon
+							min-width: 14px
+			.subtitle
+				margin-bottom: 32px
+		&--investors
+			&::after
+				// width: 840px
+				// height: 993px
+				// z-index: 0
+				// top: -20%
+				// left: -40%
+			.h2
+				margin-bottom: 95px
+				position: relative
+				z-index: 3
+			.container
+				&:before
+					display: none
+			&__wrapper
+				&::before
+					left: 33%
+					width: 92px
+					height: 97px
+				&::after
+					width: 181px
+					height: 191px
+				.item
+					padding: 24px
+					&--block
+						&__images
+							max-width: 230px
+							img
+								&:first-child
+									width: 140px
+									left: 15%
+								&:last-child
+									width: 120px
+									right: -8%
+					&:first-child .item--block__images img:last-child
+						max-width: 120px
+					&:nth-child(2)
+						.item--block
+							&__images
+								img
+									&:first-child
+										display: none
+									&:last-child
+										display: none
+					&:last-child
+						.item--block
+							&__images
+								img
+									&:first-child
+										top: -20%
+		&--roadmap
+			&::before
+				background-image: url(../img/bg/roadmap.png)
+				background-size: contain
+				bottom: 0
+				bottom: -110%
+				-webkit-filter: blur(0)
+				filter: blur(0px)
+				min-height: 1070px
+				opacity: .6
+				right: 0
+				width: 375px
+			&__wrapper 
+				.stages
+					.stage
+						&:nth-child(3), &:last-child
+							.stage--number
+								span
+									background: #353945
+									color: $white
+		&--qrcode
+			&__wrapper
+				.right
+					&--block
+						border-bottom: 1px solid #353945
+						padding-bottom: 32px
+						margin-bottom: 32px
+						&:nth-child(3)
+							margin-bottom: 52px
+						p
+							font-size: 16px
+							max-width: 100%
+						&__last
+							flex-wrap: wrap
+							gap: 50px 10px
+							.item
+								.h2
+									.icon
+										max-width: 80px
+										right: 15px
+		&--social
+			&:after
+				background-size: cover
+			&__wrapper
+				.right
+					gap: 42px
+					box-shadow: none
+					&--item 
+						flex-direction: column
+						gap: 24px
+						padding: 0
+						&__icon
+							max-height: 48px
+						&__text
+							.text
+								br
+									display: none
+						&:hover, &:focus
+							background: none !important
+	.footer
+		padding-top: 56px
+		padding-bottom: 25px
+		&--wrapper
+			padding-bottom: 32px
+			margin-left: -24px
+			margin-right: -24px
+			&__logo
+				flex-direction: column
+				border-bottom: 1px solid #353945
+				padding-bottom: 32px
+				margin-left: 24px
+				margin-right: 24px
+				&--block
+					margin-bottom: 32px
+				.social
+					transform: translateY(0)
+					transform: translateX(-8px)
+			&__menu
+				flex-direction: row
+				gap: 32px
+				margin-left: 24px
+				margin-right: 24px
+			&__block
+				flex: 1 1 100%
+				border-bottom: 1px solid #353945
+				padding-bottom: 32px
+				&:last-child
+					border-bottom: 0
+					padding-bottom: 0
+		&--bottom
+			&__left
+				align-items: center
+				justify-content: center
+				gap: 24px
+				.link
+					background-image: linear-gradient(90deg, $gray, $gray 33.33333%,#cf64ff 66.66666%,#ff6f26)
+					flex: 1 1 calc(50% - 24px)
+					max-width: 111px
+					&:nth-child(2)
+						margin-left: 0
+				.copyright
+					width: 100%
+					flex: 1 1 100%
+					text-align: center
+			&__right
+				justify-content: center
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 375px)
+	.main
+		&--partners 
+			&__wrapper 
+				.dark, .light
+					padding: 16px
+		&--striving
+			&__wrapper
+				.item
+					padding: 24px
+		&--investors__wrapper
+			.item
+				padding: 16px
+
+
+/*==========  Mobile First  ==========*/
+
+@media only screen and (min-width : 320px)
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
