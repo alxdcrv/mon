@@ -13,20 +13,12 @@ $(function() {
 			var myBlock = $('#myBlock');
 			var text = myBlock.text();
 			var maxLength = 30;
-			if (text.length > maxLength) {
-				var truncatedText = text.substr(0, maxLength/2) + "..." + text.substr(text.length - maxLength/2);
-				myBlock.text(truncatedText);
-			}
 		});
 	} else if (window.innerWidth <= 768) {
 		$(document).ready(function(){
 			var myBlock = $('#myBlock');
 			var text = myBlock.text();
 			var maxLength = 25;
-			if (text.length > maxLength) {
-				var truncatedText = text.substr(0, maxLength/2) + "..." + text.substr(text.length - maxLength/2);
-				myBlock.text(truncatedText);
-			}
 		});
 	}
 	

@@ -247,7 +247,7 @@ html
 				&__wrapper
 					&::after
 						background: linear-gradient(0deg,rgba(255,255,255,0) 0,$white 50%,rgba(255,255,255,0))
-				&__info 
+				&__info
 					.text
 						.buttons
 							.button
@@ -274,6 +274,18 @@ html
 						&--wrapper
 							background: $color_FCFCFD
 							box-shadow: 0px 12px 24px rgba(31, 47, 70, 0.1)
+						&--row
+							display: flex
+							justify-content: space-between
+							align-items: center
+							margin-bottom: 25px
+						&--items
+							font-weight: 700
+							font-size: 12px
+							line-height: 12px
+							text-align: right
+							text-transform: uppercase
+							color: #777E90
 						&--text
 							.icon
 								svg
@@ -298,7 +310,7 @@ html
 				&__wrapper
 					&::before
 						background-image: url(../img/Union-white.png)
-					.stages 
+					.stages
 						.stage
 							&--number
 								span
@@ -372,7 +384,7 @@ html
 					.right
 						border: 1px solid rgba(35, 38, 47, 0.1)
 						box-shadow: none
-						
+
 						&--item
 							&__text
 								.text
@@ -992,7 +1004,7 @@ ul
 						width: 459px
 						position: relative
 						margin-bottom: 24px
-						&:hover, &:focus 
+						&:hover, &:focus
 							#myBlock
 								background: #343946
 								cursor: pointer
@@ -1468,6 +1480,15 @@ ul
 				display: flex
 				justify-content: center
 				position: relative
+				height: 450px
+				.close
+					padding: 0!important
+					.right--text
+						padding: 10px
+						margin-top: -10px
+					img
+						border-top-right-radius: 12px
+						border-top-left-radius: 12px
 				&::before, &::after
 					content: ''
 					display: block
@@ -1493,7 +1514,52 @@ ul
 				&--image
 					display: flex
 					margin-bottom: 10px
+				&--items
+					font-weight: 700
+					font-size: 12px
+					line-height: 12px
+					text-align: right
+					text-transform: uppercase
+					color: #777E90
+				&--row
+					display: flex
+					justify-content: space-between
+					align-items: center
+					margin-bottom: 25px
+					font-weight: 700
+					font-size: 14px
+					line-height: 22px
+					img
+						margin-left: 5px
+				&--mons
+					display: flex
+					align-items: center
+					justify-content: space-between
+					font-size: 12px
+					font-weight: 700
+					margin-bottom: 9px
+					img
+						margin-left: 5px
+				&--desert
+					display: flex
+					align-items: center
+					img
+						margin-left: 5px--mons
 				&--text
+					.low
+						padding-left: 8px
+						margin-bottom: 12px
+						span
+							font-weight: 400
+							font-size: 12px
+							line-height: 20px
+							color: #B1B5C4
+						.bnb
+							font-weight: 700
+							font-size: 16px
+							line-height: 26px
+							text-transform: uppercase
+							color: #45B36B
 					.title
 						display: flex
 						justify-content: space-between
@@ -1511,6 +1577,48 @@ ul
 								padding: 9px
 								border-radius: 9px
 								background: rgba(69, 179, 107, 0.1)
+					.owners
+						display: flex
+						justify-content: space-between
+						align-items: center
+						span
+							color: $gray
+							font-size: 14px
+							line-height: 1
+						.text
+							font-weight: 600
+							font-size: 16px
+							line-height: 18px
+							text-align: right
+							text-transform: uppercase
+							color: #777E91
+					.trading-volume
+						display: flex
+						justify-content: space-between
+						align-items: center
+						margin-bottom: 32px
+						.price
+							font-weight: 700
+							font-size: 18px
+							line-height: 18px
+							text-transform: uppercase
+							color: #45B36B
+						span
+							color: $gray
+							font-size: 14px
+							line-height: 1
+						.bg
+							font-weight: 700
+							font-size: 12px
+							line-height: 10px
+							padding: 6px
+							background: rgba(239, 70, 111, 0.1)
+							.all
+								background: linear-gradient(90deg, #CF64FF 0%, #FF6F26 100%)
+								-webkit-background-clip: text
+								-webkit-text-fill-color: transparent
+								background-clip: text
+								text-fill-color: transparent
 					.volume
 						display: flex
 						justify-content: space-between
@@ -1541,6 +1649,7 @@ ul
 						&--text
 							color: $colorGray
 							font-weight: bold
+
 	&--investors
 		&::after
 			content: ''
@@ -1633,8 +1742,8 @@ ul
 								right: 0
 								top: 10%
 				&:first-child
-					.item--block 
-						&__images 
+					.item--block
+						&__images
 							img
 								&:last-child
 									width: 165px
